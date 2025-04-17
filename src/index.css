@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "tailwindcss";
+
+body{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+  font-size: 16px;
+
+}
+@theme{
+  --font-Montserrat:'Montserrat', sans-serif;
+  --font-OpenSans:'OpenSans', sans-serif;
+  --font-Poppins:'Poppins', sans-serif;
+}
+/* Custom select dropdown styling */
+select {
+  background-color: black;
+  color: white;
+}
+
+select option {
+  background-color: black;
+  color: white;
+}
+
+/* For Firefox */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px rgb(0, 0, 0) inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
