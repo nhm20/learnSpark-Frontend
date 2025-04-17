@@ -36,6 +36,7 @@ const CoursesPage = () => {
           : [];
         setSearchResults((prev) => [...(page === 1 ? [] : prev), ...data]);
         setHasMore(data.length === 10);
+        console.log(data);
       } catch (error) {
         return;
       } finally {
